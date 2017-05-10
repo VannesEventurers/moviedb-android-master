@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "122333709600",
+    "project_id": "moviesapp-f0026"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:122333709600:android:984a1ae8be2a86ff",
+        "android_client_info": {
+          "package_name": "de.sourcestream.movieDB"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "122333709600-85m18tvln6f8ci1llcovhkjh2t7iatm5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "de.sourcestream.movieDB",
+            "certificate_hash": "8b07e7fa320757d63589c27f36dec9539cc1dff7"
+          }
+        },
+        {
+          "client_id": "122333709600-jc7hvs7t8vac6ipvdvf1o4ail9npjk6o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmaxu5TDSJK8IRvWns9bP5Tvs6xTrSxbc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

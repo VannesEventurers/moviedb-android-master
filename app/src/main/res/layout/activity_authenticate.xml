@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/root"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@android:color/white">
+
+    <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="60dp"
+            android:clipToPadding="false">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+         <!--   <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/logo"/>-->
+
+         <!--   <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                <de.sourcestream.movieDB.ui.CityLaneTextView
+                        android:layout_margin="10dp"
+                        android:id="@+id/txt_authenticate"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/authenticate_with"
+                        android:textSize="15sp"
+                        android:textColor="@color/app_bar_offline"/>
+
+                <ImageView
+                        android:id="@+id/media_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:src="@drawable/fb"/>
+
+            </LinearLayout>-->
+
+            <LinearLayout
+                    android:id="@+id/lnr_media_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                <ImageView
+                        android:id="@+id/googleplus_icon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:layout_margin="10dp"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white"
+                        android:src="@drawable/googleplus"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/lnr_named_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <de.sourcestream.movieDB.ui.CityLaneTextInputLayout
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <de.sourcestream.movieDB.ui.CityLaneEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/LoginTextAppearance"
+                            android:textColor="@color/progress_bg_color"
+                            android:inputType="textEmailAddress"
+                            android:hint="@string/email"/>
+
+                </de.sourcestream.movieDB.ui.CityLaneTextInputLayout>
+
+                <de.sourcestream.movieDB.ui.CityLaneTextInputLayout
+                        android:id="@+id/first_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <de.sourcestream.movieDB.ui.CityLaneEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/LoginTextAppearance"
+                            android:textColor="@color/progress_bg_color"
+                            android:inputType="text"
+                            android:hint="@string/first_name"/>
+
+                </de.sourcestream.movieDB.ui.CityLaneTextInputLayout>
+
+                <de.sourcestream.movieDB.ui.CityLaneTextInputLayout
+                        android:id="@+id/last_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <de.sourcestream.movieDB.ui.CityLaneEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:imeOptions="actionGo"
+                            android:textColor="@color/progress_bg_color"
+                            style="@style/LoginTextAppearance"
+                            android:inputType="text"
+                            android:hint="@string/last_name"/>
+
+                </de.sourcestream.movieDB.ui.CityLaneTextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/lnr_authenticate_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <de.sourcestream.movieDB.ui.CityLaneTextInputLayout
+                        android:id="@+id/edt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone">
+
+                    <de.sourcestream.movieDB.ui.CityLaneEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/LoginTextAppearance"
+                            android:textColor="@color/progress_bg_color"
+                            android:inputType="textEmailAddress"
+                            android:hint="@string/email"/>
+
+                </de.sourcestream.movieDB.ui.CityLaneTextInputLayout>
+
+                <de.sourcestream.movieDB.ui.CityLaneTextView
+                        android:id="@+id/txt_email"
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/email"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/progress_bg_color"/>
+
+                <View
+                        android:id="@+id/email_divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/auto_multicomplete_hint"/>
+
+                <de.sourcestream.movieDB.ui.CityLaneTextView
+                        android:id="@+id/txt_first_name"
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/first_name"
+                        android:gravity="center_vertical"
+                        android:textSize="15sp"
+                        android:textColor="@color/progress_bg_color"/>
+
+                <View
+                        android:id="@+id/first_name_divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/auto_multicomplete_hint"/>
+
+                <de.sourcestream.movieDB.ui.CityLaneTextInputLayout
+                        android:id="@+id/edt_first_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone">
+
+                    <de.sourcestream.movieDB.ui.CityLaneEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/LoginTextAppearance"
+                            android:textColor="@color/progress_bg_color"
+                            android:inputType="text"
+                            android:hint="@string/first_name"/>
+
+                </de.sourcestream.movieDB.ui.CityLaneTextInputLayout>
+
+                <de.sourcestream.movieDB.ui.CityLaneTextView
+                        android:id="@+id/txt_last_name"
+                        android:visibility="visible"
+                        android:text="@string/last_name"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/progress_bg_color"/>
+
+                <View
+                        android:id="@+id/last_name_divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/auto_multicomplete_hint"/>
+
+                <de.sourcestream.movieDB.ui.CityLaneTextInputLayout
+                        android:id="@+id/edt_last_name"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content">
+
+                    <de.sourcestream.movieDB.ui.CityLaneEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:imeOptions="actionGo"
+                            android:textColor="@color/progress_bg_color"
+                            style="@style/LoginTextAppearance"
+                            android:inputType="text"
+                            android:hint="@string/last_name"/>
+
+                </de.sourcestream.movieDB.ui.CityLaneTextInputLayout>
+
+            </LinearLayout>
+
+            <de.sourcestream.movieDB.ui.CityLaneButton
+                    android:id="@+id/sign_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/ripple_blue_button"
+                    android:textAllCaps="false"
+                    android:elevation="@dimen/button_elevation_material"
+                    android:text="@string/sign_in"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
